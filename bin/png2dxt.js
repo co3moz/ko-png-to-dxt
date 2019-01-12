@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /* eslint-disable no-process-exit, no-empty */
-
+const packageJson = require('../package.json');
 const program = require('commander');
 const png2dxt = require('../lib/png2dxt');
 const path = require('path');
@@ -13,7 +13,7 @@ program
   .option('-d, --directory', 'look cwd and convert all .dxt files')
 
 program
-  .version('1.1.0')
+  .version(packageJson.version)
   .parse(process.argv);
 
 if (program.directory) {

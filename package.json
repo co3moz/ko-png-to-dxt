@@ -1,6 +1,6 @@
 {
   "name": "ko-png-to-dxt",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "Png to Knight Online texture converter",
   "main": "lib/png2dxt.js",
   "scripts": {
